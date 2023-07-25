@@ -1,0 +1,209 @@
+/*general rule*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --black:#000;
+    --white: #fff;
+    --blue: #6c83ff;
+    --red: #ffa98e;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.primary-btn{
+    width: fit-content;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 40px;
+    color: var(--black);
+    background-color: var(--white);
+}
+a{
+    color: var(--white);
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 200px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+/*start of header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 3rem;
+    background-color: var(--black);
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+/*work here*/
+nav ul li a{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 50px;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid var(--blue);
+}
+
+/*end of header*/
+
+/*start of hero secton*/
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+h1{
+    font-size: 5rem;
+    font-family: serif;
+    margin-bottom: 50px;
+}
+.hero-section p{
+    width: 570px;
+    margin-bottom: 20px;
+}
+
+/*end of hero section*/
+
+.image-of-laptop{
+    height: 100vh;
+}
+
+/*start of service section*/
+
+.service-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.service-section h2{
+    text-align: center;
+    width: 40rem;
+    font-size: 2.3rem;
+    margin-bottom: 150px;
+}
+.service{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.service-text-wrapper{
+    margin: auto;
+    width: 330px;
+}
+.service-text-wrapper p{
+    margin-bottom: 25px;
+}
+
+/*end of seervice section*/
+
+
+/*project section*/
+
+.project-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.project-section h2{
+    text-align: center;
+    width: 40rem;
+    font-size: 2.3rem;
+}
+.project-btn{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.projects-wrapper{
+    display: flex;
+    gap: 50px;
+}
+.project{
+    width: 60%;
+}
+.project2 img{
+    height: 400px;
+}
+.project h3, p{
+    margin-top: 10px;
+}
+.project p{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*contact section start*/
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+}
+.socials a img{
+    width: 30%;
+}
+.contact-section h2{
+    text-align: center;
+    width: 40rem;
+    font-size: 2.3rem;
+}
+.contact-btn{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+footer nav a{
+    margin-right: 100px;
+}
